@@ -1,4 +1,4 @@
-<style>
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
@@ -8,7 +8,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../images/logo2.jpg');
+  background-image: url('../images/R3.jpeg');
   min-height: 100%;
 }
 
@@ -32,6 +32,10 @@ body, html {
   background-image: url("../images/oasis3.jpg");
   min-height: 400px;
 }
+.bgimg-4 {
+  background-image: url("../images/logo3.jpg");
+  min-height: 100%;
+}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -43,4 +47,12 @@ body, html {
     min-height: 400px;
   }
 }
-</style>
+@font-face {
+    font-family: "Anurati-Regular";
+    src:url("../fonts/Anurati-Regular.otf");
+}
+.Anurati-font{
+  font-family:Anurati-Regular;
+  letter-spacing:-1px;
+  font-size: 4em;
+}
