@@ -21,15 +21,15 @@ body, html {
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Gallery) */
 .bgimg-2 {
-  background-image: url("../images/oasis2.jpg");
+  background-image: url("../images/gallery_parallax.jpeg");
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Contacts) */
 .bgimg-3 {
-  background-image: url("../images/oasis3.jpg");
+  background-image: url("../images/contact_parallax.jpeg");
   min-height: 400px;
 }
 .bgimg-4 {
@@ -53,6 +53,12 @@ body, html {
 }
 .Anurati-font{
   font-family:Anurati-Regular;
-  letter-spacing:-1px;
+  letter-spacing:-0.10em;
   font-size: 4em;
+  text-transform: uppercase;
+}
+.shadow{
+  /*box-shadow: horizontalDifference verticalDifference blur amplitud color;*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
 }

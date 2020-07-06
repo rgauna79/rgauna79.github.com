@@ -11,10 +11,10 @@
 
 <!-- Navbar (sit on top) -->
 
-<div class="w3-top">
-  <div class="w3-black" style="height:200px;">
-    <img src="./assets/images/logo3.jpg" class="w3-display-middle" style="height:100%;"alt="">
-  </div>
+<div class="w3-top" >
+<!--  <div class="w3-black" style="height:150px;" id="logo">
+    <img src="./assets/images/logo3.jpg" class="w3-display-middle" style="height:100%;position:relative;"alt="">
+  </div> -->
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -29,7 +29,7 @@
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
     <a href="#events" class="w3-bar-item w3-button" onclick="toggleFunction()">EVENTS</a>
     <a href="#gallery" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -39,9 +39,9 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
-<!--  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black  w3-opacity-min Anurati-font"> <span class="">OASIS</span> </span>
-  </div> -->
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="shadow w3-center w3-padding-large w3-black Anurati-font"> <span class="">OAS  I  S</span> </span>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -85,7 +85,7 @@
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Gallery Text -->
 <div class="bgimg-2 w3-display-container ">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">GALLERY</span>
@@ -100,37 +100,37 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="./assets/images/logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="./assets/images/gallery/1.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stage">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="./assets/images/gallery/2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="At the door">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="./assets/images/gallery/3.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="DJ R3">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="./assets/images/gallery/4.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="XOXO">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="./assets/images/oasis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="./assets/images/gallery/5.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Friday the 1st">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="./assets/images/gallery/6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Friday the 1st">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="./assets/images/gallery/7.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Grand opening">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/images/oasis2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="./assets/images/gallery/8.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ronnie">
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
@@ -190,14 +190,15 @@
 <footer class="w3-center w3-black w3-padding-64 ">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity w3-hide"></i>
+    <a href="https://instagram.com/oasis.tonight"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <i class="fa fa-snapchat w3-hover-opacity w3-hide"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity w3-hide"></i>
+    <i class="fa fa-twitter w3-hover-opacity w3-hide"></i>
+    <i class="fa fa-linkedin w3-hover-opacity w3-hide"></i>
   </div>
-  <p>Powered by <a href="https://rgauna79.github.io/cv" title="Roberto Gauna" target="_blank" class="w3-hover-text-green">Roberto Gauna</a></p>
+  <p>Oasis 2019</p>
+  <p style="text-align:right;padding-right:10px;">Powered by <a href="https://rgauna79.github.io/cv" title="Roberto Gauna" target="_blank" class="w3-hover-text-green ">Roberto Gauna</a></p>
 </footer>
 
 <script>
@@ -214,9 +215,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+        navbar.className = "w3-bar" + " w3-card" +  " w3-black";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-black", "");
     }
 }
 
