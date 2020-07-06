@@ -17,19 +17,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../images/R3.jpeg');
+  background-image: url('../images/R3.JPEG');
   min-height: 100%;
 }
 
 /* Second image (Gallery) */
 .bgimg-2 {
-  background-image: url("../images/gallery_parallax.jpeg");
+  background-image: url("../images/gallery_parallax.JPEG");
   min-height: 400px;
 }
 
 /* Third image (Contacts) */
 .bgimg-3 {
-  background-image: url("../images/contact_parallax.jpeg");
+  background-image: url("../images/contact_parallax.JPEG");
   min-height: 400px;
 }
 .bgimg-4 {
