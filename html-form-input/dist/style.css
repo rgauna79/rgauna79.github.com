@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display:flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display:flex;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  max-width: 900px;
+  height: 800px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-logo {
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 40vw;
+  background: center  url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+  border-radius: 1.5rem 0 0 1.5rem;
+  
+}
+.content-logo{
+  display: flex;
+}
+
+img{
+  width: 20px;
+}
+
+h1 {
+  color:white;
+  font-size: 3..5rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.content {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height:100%;
+  width: 60vw;
+}
+
+.description {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  justify-content: center;
+  overflow:auto;
+}
+
+.description > p {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  overflow: none;
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  height: 68%;
+  justify-content: center;
+  min-width:400px;
+  overflow: none;
+  
+}
+
+
+.container-form > p {
+  margin: 5px;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+}
+form{
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 33px 60px -20px  rgba(11,38,11,1);
+  -moz-box-shadow: 1px 33px 60px -20px  rgba(11,38,11,1);
+  box-shadow: 1px 33px 60px -20px rgba(11,38,11,1);
+}
+
+fieldset {
+  border:none;
+}
+.row{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.text-cell{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.text-cell label {
+  font-size: 0.7rem;
+  padding: 5px;
+  font-weight: 300;
+}
+
+form input {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #5388b3;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ee2828;
+}
+
+.log-button { 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+button {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #65eb84;
+  padding: 5px;
+  
+}
