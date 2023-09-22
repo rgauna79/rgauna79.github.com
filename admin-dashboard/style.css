@@ -1,0 +1,250 @@
+:root{
+  /*Default colors*/
+  --accent: #16a34a;
+  --high-color: #f0fdf4;
+  --medium-color: #bbf7d0;
+  --low-color: #052e16;
+  
+  /*Default Shadows*/
+  --aside-shadow:       0.1em 0.1em 0.1em rgba(0,0,0,0.9);
+  --action-text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,1);
+}
+
+*{
+  border-sizing: border-box;
+  margin:0;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  justify-content: flex-start;
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+  text-shadow: 0.05em 0.05em 0.2em rgba(0,0,0,0.4);
+  background-color:var(--medium-color);
+  color: var(--low-color);
+}
+
+
+/*Navigation Bar*/
+aside{
+  background-color: var(--accent);
+  box-shadow: 0.2em 0 0.2em rgba(0,0,0,0.3);
+  color: var(--high-color);
+  text-shadow: var(--aside-shadow);
+  width: 15em;
+}
+
+aside h1{
+    color: var(--high-color);
+    cursor: pointer;
+    position: sticky;
+    margin: 0;
+    padding: 0.5em 0 0.5em 0.5em;
+    top: 0;
+    text-shadow: var(--aside-shadow);
+    /*transition: var(--fast-transition);*/
+    white-space: nowrap;  
+}
+
+aside svg {
+    filter: drop-shadow(var(--aside-shadow));
+    vertical-align: top;
+}
+svg {
+    filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.5));
+    height: 1.5em;
+   /* transition: var(--fast-transition);*/
+    width: 1.5em;
+}
+aside svg path{
+  fill: var(--high-color);
+}
+
+ul{
+  list-style: none;  
+}
+
+nav{
+  display: grid;
+  gap: 4.5rem;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 4em;
+}
+
+.nav {
+  display:flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.nav-link {
+  display:flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Main Content*/
+main{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: stretch;
+}
+
+/*Header*/
+header{
+ background-color: var(--high-color);
+ box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.3);
+ position: sticky;
+ padding-bottom: 0.5em;
+ top: -5.8em;
+ z-index: 2;
+ display:flex;
+ flex-direction: column;
+
+}
+.top {
+  display:flex;
+  justify-content: space-between;
+  flex: 1;
+  margin: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  width:100%;
+  margin-right: auto;
+  align-items: center;
+}
+
+.search-bar > form   {
+  display: flex;
+  width: 100%;
+}
+.search-bar > form > label  {
+  display: flex;
+  justify-content:center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.search-bar > form > #search  {
+  display: inline-block;
+  border: 0;
+  background-color: var(--medium-color);
+  border-radius: 99em;
+  padding: 0.75em 2em;
+  width: 100%;
+  
+}
+
+.user-logo {
+  display:flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 370px;
+}
+
+.user-account {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttom{
+  display:flex;
+  justify-content: space-between;
+  margin: 1rem;
+  
+}
+
+.profile > h2 {
+  display:flex;
+  align-items:center;
+}
+
+.actions{
+  display:flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.btn{
+  border:none;
+  background-color:var(--accent);
+  border-radius: 99em;
+  width: 100px;
+  color: var(--high-color);
+  text-decoration: none;
+  text-shadow: var(--action-text-shadow);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/*Section*/
+section {
+  display:flex;
+  padding: 1em 2em;
+  flex: 1;
+  overflow: auto;
+  
+}
+
+section h3 {
+    display: block;
+    font-size: 1.1em;
+    margin: 0 0 1em;
+    white-space: nowrap;
+}
+
+section h4 {
+    font-weight: normal;
+    margin: 0 0 1em;
+}
+
+section article {
+    background-color: var(--high-color);
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 1em;
+    /*transition: var(--base-transition);*/
+}
+
+
+/*Projects*/
+.projects{
+  flex:3;
+}
+
+.projects > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+#announcements{
+  flex: 1;
+  padding-left: 1em;
+}
+
+footer{
+  background-color:gray;
+}
