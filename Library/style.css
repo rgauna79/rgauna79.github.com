@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+:root{
+  /*Colors*/
+  --low-color: #fee2e2;
+  --medium-color: #f87171;
+  --high-color: #ef4444;
+  --accent-color: #450a0a;
+  
+  /*Shadows*/
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  
+  /*Utils*/
+  --container-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--low-color);
+  font-family: 'Kanit', sans-serif;
+  height: 100%;
+  position: relative;
+}
+
+  button,
+  input {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    outline: none;
+    box-shadow: var(--box-shadow);
+  }
+
+/*Header*/
+
+.container{
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+.header{
+  background-color: var(--medium-color);
+  box-shadow: var(--box-shadow);
+  color: var(--accent-color);
+  
+}
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-add {
+  height:40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--low-color);
+  border: none;
+  box-shadow: var(--box-shadow);
+  cursor: pointer; 
+  transition: filter 0.15s ease-in-out;
+}
+
+label {
+  box-shadow: none;
+}
+
+/*main content*/
+.main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
+.book-list {
+  width: 100%;
+  border-collapse: collapse;
+  }
+#book-requirements{
+  background-color: var(--high-color);
+}
+td{
+  padding: 25px;
+}
+
+/*footer*/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+}
+
+/*Modal Form*/
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left:50%;
+  width:300px;
+  
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.form-book {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--high-color);
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.input{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.readed{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+}
+
+ .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    accent-color: white;
+  }
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.overlay.active{
+  display: block;
+}
+
+.btn-submit{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--low-color);
+  
+}
+
+.btn-delete{
+   padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: none;
+  background-color: var(--medium-color);
+}
+
+/*Books Container*/
+
+td {
+  border-bottom: 1px solid var(--high-color);
+}
+
+td:last-child {
+    text-align: center;
+  }
