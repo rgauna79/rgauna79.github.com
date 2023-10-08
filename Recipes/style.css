@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+main {
     display:flex;
     align-items: center;
     height: 100vh;
