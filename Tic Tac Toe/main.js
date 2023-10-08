@@ -1,7 +1,7 @@
-
-
+//⭕ 
+//✖️
 // Initialize variables
-let currentPlayer = 'X';
+let currentPlayer = '✖️';
 let playerXName = "";
 let playerOName = "";
 let gameOver = true;
@@ -18,6 +18,7 @@ playerNamesForm.addEventListener('submit', function(event) {
   playerOName = document.getElementById('playerOName').value;
   showGameInfo();
   resetGame();
+  closeModalStart();
 });
 
 // Function to show the game information
@@ -28,6 +29,7 @@ function showGameInfo() {
 
 // Function to handle a move on a cell
 function makeMove(cellIndex) {
+  
   if (!gameOver && cells[cellIndex].innerHTML === '') {
     cells[cellIndex].innerHTML = currentPlayer;
     cells[cellIndex].classList.add('player-' + currentPlayer);
@@ -37,7 +39,7 @@ function makeMove(cellIndex) {
     checkTie();
 
     // Switch players
-    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    currentPlayer = currentPlayer === '✖️' ? '⭕' : '✖️';
 
     // Update game information
     gameInfo.textContent = 'Current player: ' + getPlayerName(currentPlayer) + ' (' + currentPlayer + ')';
@@ -98,19 +100,31 @@ function closeModal(message) {
   playerOName = "";
 }
 
+//Close start form
+function closeModalStart() {
+  const modal = document.getElementById('modal-start');
+  modal.style.display = 'none';
+}
+
+//Show start form
+function showModalStart() {
+  const modal = document.getElementById('modal-start');
+}
+
 // Function to get the player name for 'X' and 'O'
 function getPlayerName(player) {
-  return player === 'X' ? playerXName : playerOName;
+  return player === '✖️' ? playerXName : playerOName;
 }
 
 // Function to reset the game
 function resetGame() {
   if (playerXName !== "" || playerOName !== ""){
-    currentPlayer = 'X';
+    currentPlayer = '✖️';
     gameOver = false;
     resetBoard();
     playerNamesForm.reset();
     moves = 0;
+    showModalStart()
   }
 }
 
