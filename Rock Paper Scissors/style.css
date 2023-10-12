@@ -3,68 +3,156 @@
     padding: 0;
     box-sizing: border-box;
     }
-
+    
     body{
-    height: 100vh;
-    background-color: black;
-    color: white;
+      font-family: system-ui, Comic Sans MS, Comic Sans, cursive;
+      background-color: black;
+      color: white;
+      font-size: 24px;
     }
     
-/*Container where player and computer choose*/
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-    height: 100%;
-    margin: auto;
-    flex: 1;
+    /* Play Board */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      height: 100%;
+      margin: auto;
+      flex: 1;
+      
+    }
     
-}
+    .top {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      border: 1px solid white;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+    
+    .playerbuttons{
+      padding-top: 10px;
+      display: flex;
+    }
+    
+    .btn {
+      background-size: 100px;
+      background-repeat: no-repeat;
+      width:100px;
+      height:100px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      outline: none;
+    }
+    
+    .btn:active {
+      transform: translatey(4px);
+      box-shadow: 0 5px #999;
+      border-bottom: 2px solid black;
+    }
+    
+    .rock {
+      background-image: url("./assets/default.jpeg");
+    }
+    
+    .paper {
+      background-image: url("./assets/paper.jpeg");
+    }
+    
+    .scissor {
+      background-image: url("./assets/scissor.jpeg");
+    }
+    
+    .player, .computer{
+      padding: 10px;
+      width: 50%;
+      display: flex;
+      flex-direction:column;
 
-.top {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid white;
-    margin-top: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-.button{
-    padding: 5px;
+    }
+    
+    .player > h2 , .computer > h2 {
+      text-align: center;
+    }
+    
+    .player > p , .computer > p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .img-container{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        align-self: center;
+        margin-bottom: 10px;
+        border-radius: 10px;
     }
 
-.player, .computer{
-    padding: 10px;
-}
-
-/*Container with Scores infor*/
-.score{
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
-
-
-
-/*Winner or Tie Info Container*/
-.messagge{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 250px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-#winner {
-    color:yellow;
-}
+    .playerChoice, .computerChoice {
+      height: 100px;
+      width: 100px;
+      align-self: center;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    
+    /* Versus Image */
+    .versus {
+      position: absolute;
+      top: 180px;
+      width: 100px;
+      height: 100px;
+    /*   border: 1px solid white; */
+    }
+    
+    .versus > img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    /* Results per round */
+    #winner {
+      color:yellow;
+    }
+    
+    .messagge{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 250px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      background-color: #171715;
+        
+    }
+    
+    /* Board Score */
+    .score{
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 250px;
+    }
+    
+    .score > p:nth-child(1){
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .score > p:nth-child(3){
+      color: yellow;
+    }
+    .score > p:nth-child(5){
+      color: yellow;
+    }
