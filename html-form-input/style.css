@@ -5,10 +5,7 @@
 }
 
 body {
-  display:flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  font-family: Verdana, sans-serif;
 }
 
 .main{
@@ -16,6 +13,7 @@ body {
   border: 1px solid black;
   border-radius: 1.5rem;
   max-width: 900px;
+  margin: 20px 20px;
   height: 800px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -23,30 +21,36 @@ body {
 }
 
 .container-logo {
-  position: relative;
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 40vw;
+  width: 300px;
   background: center  url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
   border-radius: 1.5rem 0 0 1.5rem;
   
 }
 .content-logo{
   display: flex;
+  margin: auto;
 }
 
 img{
   width: 20px;
+ 
 }
 
 h1 {
   color:white;
-  font-size: 3..5rem;
-  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  }
+h6{
+  color:white;
+  font-weight: 300;
 }
+
+
 
 .content {
 
@@ -54,7 +58,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   height:100%;
-  width: 60vw;
+  width: 600px;
 }
 
 .description {
@@ -67,7 +71,7 @@ h1 {
 }
 
 .description > p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 5px;
   overflow: none;
 }
@@ -75,10 +79,11 @@ h1 {
 .container-form{
   display: flex;
   flex-direction: column;
-  height: 68%;
-  justify-content: center;
+  height: 50%;
+  justify-content: flex-end;
   min-width:400px;
   overflow: none;
+  
   
 }
 
@@ -86,7 +91,7 @@ h1 {
 .container-form > p {
   margin: 5px;
   font-size: 2rem;
-  font-family: Helvetica, sans-serif;
+
 }
 form{
   border: 1px solid black;
@@ -109,7 +114,7 @@ fieldset {
 .text-cell{
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 15px;
 }
 
 .text-cell label {
@@ -142,7 +147,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 button {
   border-radius: 5px;
   font-size: 1.2rem;
-  background-color: #65eb84;
+  background-color: #6cf077;
   padding: 5px;
   
 }  
