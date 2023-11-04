@@ -82,7 +82,6 @@ function playerTurn(playerChoice) {
     }
   
     return playerChoice;
-  
 }
 
 //Reset Game
