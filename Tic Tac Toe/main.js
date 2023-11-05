@@ -9,7 +9,10 @@ let moves = 0;
 const cells = document.querySelectorAll('.cell');
 const playerNamesForm = document.getElementById('playerNamesForm');
 const gameInfo = document.getElementById('gameInfo');
-console.log(playerXName)
+const guest = document.getElementById('guest');
+const playerO = document.getElementById('playerOName');
+const playerX = document.getElementById('playerXName');
+
 
 // Function to handle the submission of the player names form
 playerNamesForm.addEventListener('submit', function(event) {
@@ -19,6 +22,21 @@ playerNamesForm.addEventListener('submit', function(event) {
   showGameInfo();
   resetGame();
   closeModalStart();
+});
+
+//Listener to play as a guest
+guest.addEventListener('input', (e) => {
+  if (e.target.checked){
+    playerX.value = "Guest 1"
+    playerX.disabled = true;
+    playerO.value = "Guest 2";
+    playerO.disabled = true;
+  } else {
+    playerX.value = ""
+    playerX.disabled = false;
+    playerO.value = "";
+    playerO.disabled = false;
+  }
 });
 
 // Function to show the game information
@@ -109,6 +127,9 @@ function closeModalStart() {
 //Show start form
 function showModalStart() {
   const modal = document.getElementById('modal-start');
+  modal.style.display = 'block';
+  playerO.disabled = false;
+  playerX.disabled = false;
 }
 
 // Function to get the player name for 'X' and 'O'
@@ -118,13 +139,18 @@ function getPlayerName(player) {
 
 // Function to reset the game
 function resetGame() {
-  if (playerXName !== "" || playerOName !== ""){
-    currentPlayer = '✖️';
-    gameOver = false;
-    resetBoard();
-    playerNamesForm.reset();
-    moves = 0;
-    showModalStart()
+  currentPlayer = '✖️';
+  resetBoard();
+  moves = 0;
+
+  if (!gameOver){
+    showGameInfo();
+  } else {
+    if (playerXName !== "" || playerOName !== ""){
+      gameOver = false;
+      playerNamesForm.reset();
+      showModalStart();
+    }
   }
 }
 
